@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Aula 10</title>
+</head>
+<style>
+    h1,h2,h3,h4,h5,h6{
+
+        font-style: arial;
+        margin-top: 10px;
+        margin-bottom: 10px ;
+    }
+
+    h1{
+        font-weight: bold;
+    } 
+
+
+</style>
+<body>
+    <div style="font-size: 15px ;  margin: 0.5px;">
+    <h1>4 - FERRAMENTAS TI UTILIZADAS NA BIBLIOTECA ANA BOVE</h1>
+    <h2>4.1 - Sobre a Biblioteca Ana Bove e sua instituição mantenedora</h2>
+    <h3>4.1.1 - O Imip</h3>
+    <h3>4.1.2 - A Biblioteca Ana Bove</h3>
+    <h2>4.2 - Diagnóstico tecnológico da Biblioteca Ana BOVE</h2>
+    <h3>4.2.1 - Catálogo automático</h3>
+    <h3>4.2.2 - Repositório institucional</h3>
+    <h3>4.2.3 - Portal e/ou base de dados de informação científica</h3>
+    <h4>4.2.4 - Website (site)</h4>
+    <h5>4.2.5 - Redes sociais</h4>
+    </div>
+
+    <br>
+    <hr>
+    <p> Vamos a um exemplo claro, de <u>forma</u> e <b>semântica</b> </p>
+
+    <p>O professor Fabrício é um cara legal, ele nasceu na 
+        <u><i> R. José Romério Duque, 185 - Mantena,
+        MG, 35290-000</i></u> no hospital Evangélico, e
+        ainda criança veio morar na <u><i> rua Santa
+        Luzia, 323 – Serra, ES </i></u> </p>
+
+    <p> 
+        <address> R. José Romério Duque, 185 -
+        Mantena, MG, 35290-000 </address> no
+        hospital Evangélico, e ainda criança veio morar
+        na <address > rua Santa Luzia, 323 – Serra,
+        ES</address >.</p>
+
+    <pre>
+    <code>
+        def celsius_to_fahrenheit(celsius):
+    """
+    Converte a temperatura de graus Celsius para Fahrenheit.
+    :param celsius: Temperatura em graus Celsius.
+    :return: Temperatura em graus Fahrenheit.
+    """
+    return (celsius * 9/5) + 32
+
+def main():
+    try:
+        celsius = float(input("Digite a temperatura em graus Celsius: "))
+        fahrenheit = celsius_to_fahrenheit(celsius)
+        print(f"{celsius}°C é igual a {fahrenheit:.2f}°F")
+    except ValueError:
+        print("Por favor, insira um número válido.")
+
+if __name__ == "__main__":
+    main()
+    </code>
+    </pre>
+</body>
+</html>
