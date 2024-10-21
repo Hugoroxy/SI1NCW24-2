@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+    padding: 40px 4%;
+    text-align: center;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: blueviolet;
+    transition: .1s;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    text-align: center;
+}
+
+header .btn button{
+    padding: 10px 50px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(103, 0, 103);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn button:hover{
+    box-shadow: 0px 0px 8px rgb(222, 0, 222) ;
+}
+
+
+.flex{
+    display: flex;
+
+}
+
+section.topo{
+    padding: 40px 4%;
+}
+
+.imagemtop{
+    text-align: center;
+
+}
+
+div .imagemtop img{
+
+    border-radius: 45%;
+    width: 20%;
+    height: 30%;
+   
+}
+
+.textti{
+    text-align: center;
+    color: #fff;
+    margin: 15px;
+    padding: 15px;
+}
+
+.corpo{
+    text-align: center;
+    color:#fff;
+}
+
+table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    color: #fff;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+
+.campo {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.TA{
+    margin-left: 40%;
+}
