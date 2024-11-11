@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="inputUsuario" size="60"> <br> <input id="UsuárioInput" size="60"> 
+    
+    <br>
+    <button onclick="enviaResposta()" onmouseover="show()" onmouseleave="hide()">Enviar</button>
+    <br>
+    <script type="text/JavaScript">
+     function enviaResposta() {
+     var IU = document.getElementById('inputUsuario').value;
+     var UI = document.getElementById('UsuárioInput').value;
+    window.alert('O nome é ' + UI + ' ,' + IU );
+    }
+    
+    </script>
+
+
+<script type="text/JavaScript">
+    function show() {
+    var IU = document.getElementById('inputUsuario').value;
+    var UI = document.getElementById('UsuárioInput').value;
+    document.getElementById('show').innerHTML= IU + '' + UI, 1;
+    document.getElementById('show').style.display = 'block';
+   }
+   </script>
+
+<script type="text/JavaScript">
+    function hide() {
+        document.getElementById('show').style.display="none";
+   }
+   </script>
+
+<div style="background-color: rgb(199, 191, 191);"  id='show'> </div>
+<script>
+    
+</script>
+
+</body>
+    
+
+</html>
