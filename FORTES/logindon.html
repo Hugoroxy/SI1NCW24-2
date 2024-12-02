@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="css/sty.css">
+    <link rel="shortcut icon" href="imagens/ico.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="login-side">
+            <div class="login-form">
+                <img class="img" src="imagens/FORTES.png" alt="" width="50%" style="text-align: center;">
+                <h2>SIGN IN</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label style="font-size: 12px;" for="usuario">Usuário</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+                    <div class="input-group">
+                        <label style="font-size: 12px;" for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+                <h6 style="text-align: center; color: gray;">Não possui uma conta? <a href="cadastrar.html">Cadastre-se</a></h6>
+            </div>
+        </div>
+        <div class="image-side">
+            <img src="imagens/predio.jpg" alt="Imagem de Login">
+        </div>
+    </div>
+
+    <script>
+        const validCredentials = {
+            usuario: "donatario01",
+            senha: "dona123"
+        };
+
+        function showAlert(message) {
+            alert(message);
+        }
+
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const usuario = document.getElementById("usuario").value;
+            const senha = document.getElementById("senha").value;
+
+            if (usuario === validCredentials.usuario && senha === validCredentials.senha) {
+                showAlert("Login bem-sucedido!");
+                setTimeout(function () {
+                    window.location.href = "iniciodon.html";
+                }, 2000);
+            } else {
+                showAlert("Usuário ou senha incorretos.");
+            }
+        });
+    </script>
+</body>
+</html>
